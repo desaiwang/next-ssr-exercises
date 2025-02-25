@@ -35,7 +35,7 @@ aside {
   position: sticky;
   top: 16px;
   width: 250px;
-  color: white;
+  color: rgb(209, 24, 24);
   padding: 16px;
   border: 1px solid hsl(0deg 0% 30%);
   border-radius: 24px 24px 8px 8px;
@@ -73,4 +73,14 @@ aside img {
   min-width: 0px;
   border-radius: 2px 2px 8px 8px;
   aspect-ratio: 1 / 1;
+}
+
+aside {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  aside {
+    display: revert;
+  }
 }
